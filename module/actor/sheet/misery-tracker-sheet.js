@@ -33,7 +33,7 @@ export class MBMiseryTrackerSheet extends foundry.appv1.sheets.ActorSheet {
       ? "seventh-misery"
       : "";
 
-    console.log(data);
+    // console.log(data);
     return data;
   }
 
