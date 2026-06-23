@@ -21,18 +21,10 @@ export class AllowedScvmClassesDialog extends FormApplication {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
-    html
-      .querySelector(".toggle-all")
-      .click((event) => this._onToggleAll(event));
-    html
-      .querySelector(".toggle-none")
-      .click((event) => this._onToggleNone(event));
-    html
-      .querySelector(".cancel-button")
-      .click((event) => this._onCancel(event));
-    html
-      .querySelector(".ok-button")
-      .addEventListener("click", (event) => this._onOk(event));
+    html.find(".toggle-all").on("click", this._onToggleAll.bind(this));
+    html.find(".toggle-none").on("click", this._onToggleNone.bind(this));
+    html.find(".cancel-button").on("click", this._onCancel.bind(this));
+    html.find(".ok-button").on("click", this._onOk.bind(this));
   }
 
   async getData(options = {}) {
