@@ -20,6 +20,13 @@ import { registerMacros } from "./macros.js";
 import { registerSystemSettings } from "./settings.js";
 import { dumpUuids } from "./exporter.js";
 import { drawFromTable } from "./packutils.js";
+import {
+  testStrength,
+  testAgility,
+  testPresence,
+  testToughness,
+  testCustomAbility,
+} from "./actor/test-abilities.js";
 
 Hooks.once("init", async function () {
   console.log("Initializing MÖRK BORG system");
@@ -40,6 +47,11 @@ Hooks.once("init", async function () {
     // locationPadRollTableIndexHtml
     dumpUuids,
     drawFromTable,
+    testStrength,
+    testAgility,
+    testPresence,
+    testToughness,
+    testCustomAbility,
   };
 });
 

@@ -3,20 +3,12 @@
 ## Test Ability
 
 ```
-if (actor !== null) {
-  actor.testStrength();
+if (actor) {
+  game.exporter.testStrength(actor)
 }
 ```
 
 There are equivalent functions for testAgility(), testPresence(), and testToughness().
-
-## Defend
-
-```
-if (actor !== null) {
-  actor.defend();
-}
-```
 
 ## Herbmaster Decoctions
 
