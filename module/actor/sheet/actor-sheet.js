@@ -166,7 +166,7 @@ export default class MBActorSheet extends foundry.appv1.sheets.ActorSheet {
    * @private
    */
   async _onToggleEquippedItem(event) {
-    console.log("onToggle", event);
+    // console.log("onToggle", event);
     event.preventDefault();
     const anchor = $(event.currentTarget);
     const li = anchor.parents(".item");

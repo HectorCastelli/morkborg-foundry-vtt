@@ -33,7 +33,15 @@ export class MBMiseryTrackerSheet extends foundry.appv1.sheets.ActorSheet {
       ? "seventh-misery"
       : "";
 
-    console.log(data);
+    data.data.system.miseryDieOptions = {
+      "1d100": "MB.MiseryDie100",
+      "1d20": "MB.MiseryDie20",
+      "1d10": "MB.MiseryDie10",
+      "1d6": "MB.MiseryDie6",
+      "1d2": "MB.MiseryDie2",
+    };
+
+    // console.log(data);
     return data;
   }
 

@@ -12,9 +12,12 @@ export function registerCombat() {
     html
       .querySelector("nav.encounters.tabbed")
       ?.insertAdjacentHTML("beforeend", partyInitiativeButton);
-    html.querySelector("a[dataControl=rollParty]").onclick = () => {
-      rollPartyInitiative();
-    };
+    const partyRollElement = html.querySelector("a[dataControl=rollParty]");
+    if (partyRollElement) {
+      partyRollElement.onclick = () => {
+        rollPartyInitiative();
+      };
+    }
   });
 }
 

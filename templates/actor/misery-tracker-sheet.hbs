@@ -159,13 +159,7 @@
     <div class="agony-block">
       <div class="agony-title">{{ localize "MB.WhenWillAllThisAgonyEnd" }}</div>
       <select name="system.miseryDie">
-        {{#select data.system.miseryDie}}
-          <option value="1d100">{{ localize "MB.MiseryDie100" }}</option>
-          <option value="1d20">{{ localize "MB.MiseryDie20" }}</option>
-          <option value="1d10">{{ localize "MB.MiseryDie10" }}</option>
-          <option value="1d6">{{ localize "MB.MiseryDie6" }}</option>
-          <option value="1d2">{{ localize "MB.MiseryDie2" }}</option>
-        {{/select}}
+        {{selectOptions data.system.miseryDieOptions selected=data.system.miseryDie localize=true}}
         </select>
     </div>
 
