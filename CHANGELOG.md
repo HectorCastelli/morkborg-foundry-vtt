@@ -1,3 +1,8 @@
+# 6.0.0
+
+- v14 compatibility by @HectorCastelli.
+- Fix suggested macros by @HectorCastelli.
+
 # 5.1.2
 
 - Fix hook for journal page rendering, so DRAW tags are again rollable.
