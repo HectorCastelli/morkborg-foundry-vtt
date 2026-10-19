@@ -73,13 +73,13 @@ async function unautomatedAttack(actor, itemId) {
   const itemRollData = item.getRollData();
   const actorRollData = actor.getRollData();
   const isRanged = itemRollData.weaponType === "ranged";
-  const ability = isRanged ? "presence" : "strength";
+  const ability = isRanged ? "agility" : "strength";
   const attackRoll = new Roll(`d20+@abilities.${ability}.value`, actorRollData);
   await attackRoll.evaluate();
   await showDice(attackRoll);
 
   const abilityAbbrevKey = isRanged
-    ? "MB.AbilityPresenceAbbrev"
+    ? "MB.AbilityAgilityAbbrev"
     : "MB.AbilityStrengthAbbrev";
   const weaponTypeKey = isRanged ? "MB.WeaponTypeRanged" : "MB.WeaponTypeMelee";
   await decrementWeaponAmmo(actor, item);
@@ -161,8 +161,8 @@ async function rollAttack(actor, itemId, attackDR, targetArmor) {
 
   // roll 1: attack
   const isRanged = itemRollData.weaponType === "ranged";
-  // ranged weapons use presence; melee weapons use strength
-  const ability = isRanged ? "presence" : "strength";
+  // ranged weapons use agility; melee weapons use strength
+  const ability = isRanged ? "agility" : "strength";
   const attackRoll = new Roll(`d20+@abilities.${ability}.value`, actorRollData);
   await attackRoll.evaluate();
   await showDice(attackRoll);
@@ -214,7 +214,7 @@ async function rollAttack(actor, itemId, attackDR, targetArmor) {
 
   // TODO: decide keys in handlebars/template?
   const abilityAbbrevKey = isRanged
-    ? "MB.AbilityPresenceAbbrev"
+    ? "MB.AbilityAgilityAbbrev"
     : "MB.AbilityStrengthAbbrev";
   const weaponTypeKey = isRanged ? "MB.WeaponTypeRanged" : "MB.WeaponTypeMelee";
   const rollResult = {
