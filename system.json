@@ -102,7 +102,7 @@
   },
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/fvtt-fria-ligan/morkborg-foundry-vtt",
-  "manifest": "https://github.com/fvtt-fria-ligan/morkborg-foundry-vtt/releases/latest/download/system.json",
-  "download": "https://github.com/fvtt-fria-ligan/morkborg-foundry-vtt/releases/latest/download/system.zip"
+  "url": "https://github.com/HectorCastelli/morkborg-foundry-vtt",
+  "manifest": "https://github.com/HectorCastelli/morkborg-foundry-vtt/releases/latest/download/system.json",
+  "download": "https://github.com/HectorCastelli/morkborg-foundry-vtt/releases/latest/download/system.zip"
 }

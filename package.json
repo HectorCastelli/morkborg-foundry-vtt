@@ -13,7 +13,7 @@
     "watch": "sass --watch ./scss:./css",
     "fvtt": "fvtt"
   },
-  "repository": "https://github.com/fvtt-fria-ligan/morkborg-foundry-vtt.git",
+  "repository": "https://github.com//morkborg-foundry-vtt.git",
   "author": "mcglincy",
   "license": "MIT",
   "devDependencies": {
